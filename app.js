@@ -709,13 +709,13 @@
                 <!-- Social Links -->
                 <div class="d-flex align-items-center gap-3 pt-3 border-top">
                   <strong class="text-dark">Social:</strong>
-                  <a href="https://www.instagram.com/aapka.ad?igsh=MXgyN3dsb3R1eW1jYQ%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" class="text-danger fs-4" title="Instagram">
+                  <a href="https://www.instagram.com/think4ad" target="_blank" rel="noreferrer" class="text-danger fs-4" title="Instagram">
                     <i class="fab fa-instagram"></i>
                   </a>
                   <a href="https://wa.me/9369634520" target="_blank" rel="noreferrer" class="text-success fs-4" title="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/aapka-ad-011632323/" target="_blank" rel="noreferrer" class="text-primary fs-4" title="LinkedIn">
+                  <a href="https://www.linkedin.com/company/think4ad" target="_blank" rel="noreferrer" class="text-primary fs-4" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                   </a>
                   <a href="https://youtube.com/@think4ad-h9s?si=dbRga85zNSc80OCl" target="_blank" rel="noreferrer" class="text-danger fs-4" title="YouTube">
