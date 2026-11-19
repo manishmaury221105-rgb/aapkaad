@@ -103,15 +103,49 @@
     const groups = getGroupedServices();
 
     container.innerHTML = `
-      <!-- Hero Banner -->
-      <section class="hero-section d-flex align-items-center mb-4">
-        <div class="container text-center">
-          <div class="hero-content">
-            <h1 class="hero-title">Elevate Your Brand with <span class="highlight">Think4ad</span></h1>
-            <p class="hero-text">India's Leading Outdoor Advertising & Transit Media Network</p>
-            <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
-              <a href="#/contact-us" class="btn btn-warning btn-lg fw-bold px-4 py-2 text-dark shadow-sm">Get Free Quote</a>
-              <button onclick="window.openEnquiryModal('General Inquiry')" class="btn btn-outline-light btn-lg fw-bold px-4 py-2 shadow-sm">Instant Enquiry</button>
+      <!-- Modern Responsive Hero Banner Showcase (Mobile & Laptop Friendly) -->
+      <section class="hero-showcase-container mb-4">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white">
+          <div class="hero-image-wrap position-relative">
+            <img 
+              src="assets/hero-main.jpg" 
+              alt="Think4ad - Bigger Bolder Brands | Outdoor Advertising, Fabrication & Transit Media Network" 
+              class="hero-main-banner-img w-100 d-block"
+            />
+          </div>
+
+          <!-- Responsive Action Bar for Mobile & Laptop -->
+          <div class="hero-action-bar bg-white p-3 p-md-4 border-top">
+            <div class="row align-items-center g-3">
+              <div class="col-lg-7 col-md-12 text-center text-lg-start">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-2 flex-wrap">
+                  <span class="badge bg-danger text-uppercase px-2 py-1 rounded-pill fw-bold" style="font-size: 11px; letter-spacing: 0.8px;">
+                    <i class="fas fa-award me-1"></i> India's Premier OOH Network
+                  </span>
+                  <span class="badge bg-light text-dark border px-2 py-1 rounded-pill" style="font-size: 11px;">
+                    <i class="fas fa-check-circle text-success me-1"></i> Pan-India Execution
+                  </span>
+                </div>
+                <h1 class="hero-bar-title fw-bold text-dark mb-1" style="font-size: clamp(1.4rem, 2.4vw, 2.2rem); letter-spacing: -0.5px;">
+                  Bigger, Bolder Brands with <span class="text-danger">Think4ad</span>
+                </h1>
+                <p class="hero-bar-desc text-muted mb-0" style="font-size: clamp(0.85rem, 1.1vw, 0.98rem); line-height: 1.5;">
+                  Outdoor Hoardings • Unipole Fabrication • In-Shop Branding • Transit Media • Nationwide Execution
+                </p>
+              </div>
+              <div class="col-lg-5 col-md-12">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-end gap-2 flex-wrap">
+                  <a href="#/contact-us" class="btn btn-warning fw-bold px-3 py-2 text-dark shadow-sm rounded-pill flex-grow-1 flex-sm-grow-0 text-center">
+                    <i class="fas fa-file-invoice me-1"></i> Get Free Quote
+                  </a>
+                  <button onclick="window.openEnquiryModal('Hero Instant Enquiry')" class="btn btn-danger fw-bold px-3 py-2 shadow-sm rounded-pill flex-grow-1 flex-sm-grow-0">
+                    <i class="fas fa-paper-plane me-1"></i> Instant Enquiry
+                  </button>
+                  <a href="tel:9450626743" class="btn btn-success fw-bold px-3 py-2 shadow-sm rounded-pill flex-grow-1 flex-sm-grow-0 text-center">
+                    <i class="fas fa-phone-alt me-1"></i> 9450626743
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -256,12 +290,12 @@
     initCarousel();
   }
 
-  // Render Service Cards helper
+  // Render Service Cards helper (2 per row on phones, 3 on tablets, 4 on laptops)
   function renderServiceCards(items) {
     return items.map(item => `
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
         <a href="#/design-details?id=${item.id}" class="card-link text-decoration-none">
-          <div class="card image-card shadow-sm h-100 border-0">
+          <div class="card image-card shadow-sm h-100 border-0 rounded-3 overflow-hidden">
             <div class="card-img-wrap position-relative overflow-hidden">
               <img 
                 loading="lazy" 
@@ -270,10 +304,10 @@
                 class="card-image w-100"
                 onerror="this.src='assets/DealBoard1-BJfcIQYS.jpg'"
               />
-              <span class="view-overlay"><i class="fas fa-eye me-1"></i> View Details</span>
+              <span class="view-overlay"><i class="fas fa-eye me-1"></i> View</span>
             </div>
-            <div class="card-body p-3 text-center">
-              <h6 class="card-title fw-bold text-dark text-uppercase mb-1" style="font-size: 14px; letter-spacing: 0.5px;">
+            <div class="card-body p-2 p-md-3 text-center">
+              <h6 class="card-title fw-bold text-dark text-uppercase mb-1" style="font-size: clamp(11px, 2.5vw, 13px); letter-spacing: 0.3px;">
                 ${item.title || ''}
               </h6>
               <span class="badge bg-light text-secondary border" style="font-size: 10px;">
@@ -383,6 +417,25 @@
         resetTimer();
       };
     });
+
+    // Touch swipe support for phones/tablets
+    let touchStartX = 0;
+    let touchEndX = 0;
+    track.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchStartX - touchEndX > 45) {
+        carouselIndex++;
+        updateCarousel();
+        resetTimer();
+      } else if (touchEndX - touchStartX > 45) {
+        carouselIndex--;
+        updateCarousel();
+        resetTimer();
+      }
+    }, { passive: true });
 
     function resetTimer() {
       if (carouselInterval) clearInterval(carouselInterval);
@@ -821,7 +874,7 @@
     form.reset();
   };
 
-  // Mobile Menu Toggle
+  // Mobile Menu Toggle & Helpers
   window.toggleMobileMenu = function () {
     const menuLinks = document.getElementById('menu-links');
     if (menuLinks) {
@@ -829,8 +882,20 @@
     }
   };
 
+  window.closeMobileMenu = function () {
+    const menuLinks = document.getElementById('menu-links');
+    if (menuLinks && menuLinks.classList.contains('active')) {
+      menuLinks.classList.remove('active');
+    }
+  };
+
   // Setup Routing Listeners
-  window.addEventListener('hashchange', handleRoute);
+  window.addEventListener('hashchange', () => {
+    window.closeMobileMenu();
+    handleRoute();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   window.addEventListener('DOMContentLoaded', () => {
     handleRoute();
 
@@ -839,6 +904,15 @@
       const modal = document.getElementById('enquiryModal');
       if (e.target === modal) {
         window.closeEnquiryModal();
+      }
+
+      // Close mobile menu on outside click
+      const menuLinks = document.getElementById('menu-links');
+      const toggleBtn = document.querySelector('.menu-toggle-btn');
+      if (menuLinks && menuLinks.classList.contains('active')) {
+        if (!menuLinks.contains(e.target) && (!toggleBtn || !toggleBtn.contains(e.target))) {
+          window.closeMobileMenu();
+        }
       }
     });
   });
