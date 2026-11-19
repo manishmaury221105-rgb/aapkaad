@@ -1,4 +1,4 @@
-param(
+﻿param(
     [int]$Port = 8080
 )
 
@@ -9,7 +9,7 @@ $listener.Prefixes.Add($prefix)
 try {
     $listener.Start()
     Write-Host "========================================================"
-    Write-Host " AapkaAd Web App Server running at: $prefix"
+    Write-Host " Think4ad Web App Server running at: $prefix"
     Write-Host " Press Ctrl+C in this terminal to stop the server."
     Write-Host "========================================================"
 } catch {

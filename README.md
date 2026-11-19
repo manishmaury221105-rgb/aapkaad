@@ -1,12 +1,12 @@
-# AapkaAd Web Application (aapkaad.com Clone)
+﻿# Think4ad Web Application (think4ad.com Clone)
 
-A pixel-perfect, responsive web application replica of **[aapkaad.com](https://aapkaad.com)** built with clean HTML5, Bootstrap 5, Poppins typography, and modern Vanilla JavaScript SPA architecture.
+A pixel-perfect, responsive web application replica of **[think4ad.com](https://think4ad.com)** built with clean HTML5, Bootstrap 5, Poppins typography, and modern Vanilla JavaScript SPA architecture.
 
 ---
 
 ## 🌟 Overview & Key Features
 
-This project faithfully replicates all content, styling, layout, components, and media from **AapkaAd** (India's premier outdoor advertising and transit media network):
+This project faithfully replicates all content, styling, layout, components, and media from **Think4ad** (India's premier outdoor advertising and transit media network):
 
 1. **Sticky Header & Responsive Navigation**:
    - High-resolution brand logo (`assets/Logo.jpeg`)
@@ -18,7 +18,7 @@ This project faithfully replicates all content, styling, layout, components, and
    - Hero banner featuring original imagery (`assets/Hero-Dqkn-HXZ.jpeg`)
    - Gradient overlay and promotional CTA buttons ("Get Free Quote" & "Instant Enquiry")
 
-3. **Complete 32+ Services Catalog ("EXPLORE THE AAPKA AD")**:
+3. **Complete 32+ Services Catalog ("EXPLORE THE THINK4AD")**:
    - **Fixed Media**: Dealer Board, Glow Sign, In Shop Branding, ARCH Gate, Wall Wrap, RWA Colony Gantry, Banner Advertising, Pole Kiosk, Hoarding, Unipole Hoarding, Changing Room, ACP Board
    - **Manufacturing**: Unipole Manufacturing, Shop Design, Boom Barrier, Signage
    - **Moving Media (Transit)**: VAN Advertising, Auto Rickshaw Branding, Bus Advertising, Rickshaw Advertising, Look Walker, Boat Advertising, Boat Painting, Road Show
@@ -68,7 +68,7 @@ This project faithfully replicates all content, styling, layout, components, and
 ### Option A: Using the Built-In Local Web Server (Recommended)
 In PowerShell, navigate to the project directory and run:
 ```powershell
-cd C:\Users\Think4AD\.gemini\antigravity\scratch\aapkaad-app
+cd C:\Users\Think4AD\.gemini\antigravity\scratch\think4ad-app
 .\serve.ps1 -Port 8080
 ```
 Then open your browser at **`http://localhost:8080`**.
@@ -81,9 +81,9 @@ You can also directly double-click or open **`index.html`** in any web browser (
 ## 📁 Project Structure
 
 ```
-aapkaad-app/
+think4ad-app/
 ├── assets/                  # 70 downloaded images, logos, banners, state cards
-│   ├── Logo.jpeg            # AapkaAd logo
+│   ├── Logo.jpeg            # Think4ad logo
 │   ├── Hero-Dqkn-HXZ.jpeg   # Main hero background
 │   ├── up-CcdXf9K8.jpeg     # Uttar Pradesh hub card
 │   ├── bihar-CIly30xF.jpeg  # Bihar hub card
@@ -92,7 +92,7 @@ aapkaad-app/
 │   ├── chhatish-DAZpv640.jpeg # Chhattisgarh hub card
 │   └── ... (all media images for fixed & moving advertising)
 ├── index.html               # Main HTML file with SEO tags, navbar, footer & modal
-├── style.css                # AapkaAd production styling + Bootstrap 5 responsive rules
+├── style.css                # Think4ad production styling + Bootstrap 5 responsive rules
 ├── services-data.js         # Complete dataset of 32+ services with descriptions & specs
 ├── app.js                   # Client-side SPA router, carousel logic & event handlers
 ├── serve.ps1                # Lightweight PowerShell HTTP server script
@@ -104,5 +104,5 @@ aapkaad-app/
 ## 📞 Business Contact Details Replicated
 - **Headquarters**: Bharathara (Lahartara - Kotwa Airport Road), Post: Lohta, Varanasi, Uttar Pradesh - 221107
 - **Phone Numbers**: +91 9450626743 | +91 8052650079 | +91 9369634520
-- **Email**: aapkaadindia@gmail.com
+- **Email**: think4adindia@gmail.com
 - **WhatsApp Support**: +91 9369634520

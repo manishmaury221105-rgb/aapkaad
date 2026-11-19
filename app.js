@@ -1,6 +1,6 @@
-/**
- * AapkaAd Web Application - Full Replica
- * Same-to-same implementation of aapkaad.com
+﻿/**
+ * Think4ad Web Application - Full Replica
+ * Same-to-same implementation of think4ad.com
  */
 
 (function () {
@@ -12,7 +12,7 @@
   let carouselIndex = 0;
   let carouselInterval = null;
 
-  // Regional Offices data from aapkaad.com
+  // Regional Offices data from think4ad.com
   const regionalOffices = [
     {
       state: "UTTAR PRADESH",
@@ -107,7 +107,7 @@
       <section class="hero-section d-flex align-items-center mb-4">
         <div class="container text-center">
           <div class="hero-content">
-            <h1 class="hero-title">Elevate Your Brand with <span class="highlight">AapkaAd</span></h1>
+            <h1 class="hero-title">Elevate Your Brand with <span class="highlight">Think4ad</span></h1>
             <p class="hero-text">India's Leading Outdoor Advertising & Transit Media Network</p>
             <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
               <a href="#/contact-us" class="btn btn-warning btn-lg fw-bold px-4 py-2 text-dark shadow-sm">Get Free Quote</a>
@@ -119,7 +119,7 @@
 
       <!-- Services Gallery Section -->
       <div class="my-5 Container1">
-        <h2 class="text-center mb-4 gallery-heading">EXPLORE THE AAPKA AD</h2>
+        <h2 class="text-center mb-4 gallery-heading">EXPLORE THE THINK4AD</h2>
 
         <!-- Category 1: FIXED MEDIA -->
         <div class="category-block mb-5">
@@ -234,7 +234,7 @@
                 ${item.title || ''}
               </h6>
               <span class="badge bg-light text-secondary border" style="font-size: 10px;">
-                ${item.title1 || 'AAPKA AD'}
+                ${item.title1 || 'THINK4AD'}
               </span>
             </div>
           </div>
@@ -474,7 +474,7 @@
             <div class="d-flex align-items-center gap-2">
               <span class="fw-bold text-muted">Need Quick Assistance?</span>
               <a href="tel:9450626743" class="btn btn-outline-success btn-sm"><i class="fas fa-phone-alt me-1"></i> 9450626743</a>
-              <a href="https://wa.me/9369634520?text=Hi%20AapkaAd,%20I%20am%20interested%20in%20${encodeURIComponent(item.title)}" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp me-1"></i> Chat on WhatsApp</a>
+              <a href="https://wa.me/9369634520?text=Hi%20Think4ad,%20I%20am%20interested%20in%20${encodeURIComponent(item.title)}" target="_blank" class="btn btn-success btn-sm"><i class="fab fa-whatsapp me-1"></i> Chat on WhatsApp</a>
             </div>
             <button onclick="window.openEnquiryModal('${item.title}')" class="btn btn-primary">
               <i class="fas fa-paper-plane me-1"></i> Send Instant Proposal Request
@@ -492,16 +492,16 @@
         <!-- Hero Section with Background Overlay -->
         <div class="aboutus-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/Hero-Dqkn-HXZ.jpeg') center/cover no-repeat; min-height: 400px; padding: 80px 20px;">
           <div class="overlay">
-            <h1 class="hero-title fw-bold text-white mb-2">About AAPKA AD</h1>
+            <h1 class="hero-title fw-bold text-white mb-2">About THINK4AD</h1>
             <p class="hero-subtitle text-light fs-5">Crafting outdoor advertising campaigns that deliver real impact.</p>
           </div>
         </div>
 
-        <!-- About Us Core Content from aapkaad.com -->
+        <!-- About Us Core Content from think4ad.com -->
         <div class="container aboutus-content mt-5 mb-5" style="max-width: 950px;">
           <div class="card border-0 shadow-sm p-4 p-md-5 rounded">
             <p class="lead mb-4" style="line-height: 1.9; color: #333;">
-              <strong>AAPKA AD</strong> is to create a successful outdoor advertising plan for the clients. These plans are very economic and are focused to tap the target audience. To suit the requirements of clients, plans are designed by expert teams. Every campaign designed by our team goes under proper scrutiny so as to ensure the best possible way to benefit your brand/organization.
+              <strong>THINK4AD</strong> is to create a successful outdoor advertising plan for the clients. These plans are very economic and are focused to tap the target audience. To suit the requirements of clients, plans are designed by expert teams. Every campaign designed by our team goes under proper scrutiny so as to ensure the best possible way to benefit your brand/organization.
             </p>
 
             <p class="mb-4 text-secondary" style="line-height: 1.8; font-size: 1.05rem;">
@@ -509,7 +509,7 @@
             </p>
 
             <p class="mb-4 text-secondary" style="line-height: 1.8; font-size: 1.05rem;">
-              We have a very plain and simple approach. It takes no extra effort to notice an outdoor advertisement once a person is out in the sun. Outdoor advertisement is out there in the open for everyone to view as it’s not the usual print advertisement that you have to turn the pages and see neither it’s the visual commercial that you can mute. We at AAPKA AD walk an extra mile through choosing only the revered sites for to ensure that it becomes hard to ignore. So when you opt to advertise using an outdoor media, our prime principle is your efforts don’t go in vain, neither is you forced to make any compromise. Over our single medium of AAPKA AD, we resolve all the complexities and present before our clients the solutions that are best.
+              We have a very plain and simple approach. It takes no extra effort to notice an outdoor advertisement once a person is out in the sun. Outdoor advertisement is out there in the open for everyone to view as it’s not the usual print advertisement that you have to turn the pages and see neither it’s the visual commercial that you can mute. We at THINK4AD walk an extra mile through choosing only the revered sites for to ensure that it becomes hard to ignore. So when you opt to advertise using an outdoor media, our prime principle is your efforts don’t go in vain, neither is you forced to make any compromise. Over our single medium of THINK4AD, we resolve all the complexities and present before our clients the solutions that are best.
             </p>
 
             <!-- Stats Showcase -->
@@ -542,7 +542,7 @@
 
             <!-- Call to Action -->
             <div class="text-center mt-3">
-              <button onclick="window.openEnquiryModal('Partner with AapkaAd')" class="btn btn-danger btn-lg px-5 shadow">
+              <button onclick="window.openEnquiryModal('Partner with Think4ad')" class="btn btn-danger btn-lg px-5 shadow">
                 Start Your Campaign with Us
               </button>
             </div>
@@ -659,7 +659,7 @@
                   <i class="fas fa-envelope text-primary fs-5 me-3"></i>
                   <div>
                     <strong class="me-2 text-dark">Email:</strong>
-                    <a href="mailto:aapkaadindia@gmail.com" class="text-decoration-none text-dark fw-bold">aapkaadindia@gmail.com</a>
+                    <a href="mailto:think4adindia@gmail.com" class="text-decoration-none text-dark fw-bold">think4adindia@gmail.com</a>
                   </div>
                 </div>
 
@@ -675,7 +675,7 @@
                   <a href="https://www.linkedin.com/in/aapka-ad-011632323/" target="_blank" rel="noreferrer" class="text-primary fs-4" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                   </a>
-                  <a href="https://youtube.com/@aapkaad-h9s?si=dbRga85zNSc80OCl" target="_blank" rel="noreferrer" class="text-danger fs-4" title="YouTube">
+                  <a href="https://youtube.com/@think4ad-h9s?si=dbRga85zNSc80OCl" target="_blank" rel="noreferrer" class="text-danger fs-4" title="YouTube">
                     <i class="fab fa-youtube"></i>
                   </a>
                   <a href="https://www.facebook.com/share/1CxavbR5dA/?mibextid=wwXIfr" target="_blank" rel="noreferrer" class="text-primary fs-4" title="Facebook">
