@@ -117,6 +117,49 @@
         </div>
       </section>
 
+      <!-- 5 Core Solutions (From Think4ad Brand Identity) -->
+      <div class="Container1 my-4">
+        <div class="card border-0 shadow-sm p-3 bg-white rounded-3">
+          <div class="row text-center g-3 align-items-center justify-content-center">
+            <div class="col-lg col-md-4 col-6">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-bullhorn text-danger fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">BRANDING</h6>
+                <small class="text-muted" style="font-size: 11px;">Promotion</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-print text-primary fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">PRINTING</h6>
+                <small class="text-muted" style="font-size: 11px;">Solution</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-paint-brush text-warning fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">GRAPHIC</h6>
+                <small class="text-muted" style="font-size: 11px;">Design</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-tools text-danger fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">FABRICATION</h6>
+                <small class="text-muted" style="font-size: 11px;">Installation</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-laptop-code text-info fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">DIGITAL</h6>
+                <small class="text-muted" style="font-size: 11px;">Online Solution</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Services Gallery Section -->
       <div class="my-5 Container1">
         <h2 class="text-center mb-4 gallery-heading">EXPLORE THE THINK4AD</h2>
@@ -687,6 +730,49 @@
           </div>
         </div>
       </section>
+
+      <!-- 5 Core Solutions (From Think4ad Brand Identity) -->
+      <div class="Container1 my-4">
+        <div class="card border-0 shadow-sm p-3 bg-white rounded-3">
+          <div class="row text-center g-3 align-items-center justify-content-center">
+            <div class="col-lg col-md-4 col-6">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-bullhorn text-danger fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">BRANDING</h6>
+                <small class="text-muted" style="font-size: 11px;">Promotion</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-print text-primary fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">PRINTING</h6>
+                <small class="text-muted" style="font-size: 11px;">Solution</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-paint-brush text-warning fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">GRAPHIC</h6>
+                <small class="text-muted" style="font-size: 11px;">Design</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-tools text-danger fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">FABRICATION</h6>
+                <small class="text-muted" style="font-size: 11px;">Installation</small>
+              </div>
+            </div>
+            <div class="col-lg col-md-4 col-6 border-start-md">
+              <div class="d-flex flex-column align-items-center p-2">
+                <i class="fas fa-laptop-code text-info fs-3 mb-2"></i>
+                <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">DIGITAL</h6>
+                <small class="text-muted" style="font-size: 11px;">Online Solution</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     `;
   }
 
